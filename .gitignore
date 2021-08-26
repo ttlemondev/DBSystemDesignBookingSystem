@@ -5,3 +5,7 @@ server/node_modules/
 server/config.js
 
 *.js~
+
+client/.idea/
+
+client/pages/_index.js
