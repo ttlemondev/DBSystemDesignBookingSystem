@@ -94,6 +94,10 @@ class Editfilm extends React.Component {
         console.log(this.props.film)
         return(
             <>
+                <Head>
+                    <title>编辑电影信息</title>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
+                </Head>
                 <Navbar page="editfilm" username="admin"></Navbar>
                 <div className="bg-gray-100 max-w-7xl mx-auto mt-6 py-6 sm:px-6 lg:px-8 border rounded-lg">
                     <div className="mt-0">

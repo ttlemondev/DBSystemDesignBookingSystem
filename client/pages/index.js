@@ -17,6 +17,7 @@ export default function Home() {
         <div className="min-h-screen flex items-center justify-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
             <Head>
                 <title>电影订票系统</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
             </Head>
             <div className="max-w-md w-full space-y-8 border p-5 bg-blue-100 rounded-lg">
                 <div>
