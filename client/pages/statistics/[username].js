@@ -13,7 +13,7 @@ export default function Username(props) {
                 <title>统计</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
             </Head>
-            <Navbar page="history" username={props.username}></Navbar>
+            <Navbar page="statistics" username={props.username}></Navbar>
             <div className="m-5 space-y-4">
                 <div className="flex flex-col">
                     <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
