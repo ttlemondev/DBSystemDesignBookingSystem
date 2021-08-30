@@ -1,6 +1,6 @@
 # DBSystemDesignBookingSystem
 
-A simple movie ticket booking system for the course design of SCUT DB system introduction.
+A simple theater booking system for the course design of SCUT DB system introduction.
 
 Client uses Next.js and tailwindcss, and Server uses Koa and Sequelize.
 
