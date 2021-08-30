@@ -10,7 +10,7 @@ export default function Home() {
         if(username == "") {
             alert("请输入用户名")
         } else {
-            Router.push('/booking?username=' + username)
+            Router.push('/booking/' + username)
         }
     }
     return(
@@ -35,7 +35,7 @@ export default function Home() {
                             登录
                         </button>
                         <p className="mt-2 text-right text-sm text-gray-600">
-                            <Link href="/booking?username=admin">
+                            <Link href="/booking/admin">
                                 <a className="font-medium text-indigo-600 hover:text-indigo-500">
                                     管理员入口
                                 </a>

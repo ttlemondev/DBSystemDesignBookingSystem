@@ -15,9 +15,27 @@ export default function Booking(props) {
                         <div className="sm:block sm:ml-6 py-2 px-3 text-white">电影订票系统</div>
                         <div className="hidden sm:block sm:ml-6">
                             <div className="flex space-x-4">
-                                <a className={(props.page=="booking") ? "bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" : "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"}>订票大厅</a>
-                                <a className={(props.page=="statistics") ? "bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" : "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"}>统计</a>
-                                <a className={(props.page=="history") ? "bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" : "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"}>历史记录</a>
+                                {(props.page=="booking")?
+                                        <a className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">订票大厅</a>
+                                    :
+                                    <Link href={"/booking/" + props.username}>
+                                        <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">订票大厅</a>
+                                    </Link>
+                                }
+                                {(props.page=="statistics")?
+                                    <a className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">统计</a>
+                                    :
+                                    <Link href={"/statistics/" + props.username}>
+                                        <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">统计</a>
+                                    </Link>
+                                }
+                                {(props.page=="history")?
+                                    <a className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">购票记录</a>
+                                    :
+                                    <Link href={"/history/" + props.username}>
+                                        <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">购票记录</a>
+                                    </Link>
+                                }
                             </div>
                         </div>
                     </div>
