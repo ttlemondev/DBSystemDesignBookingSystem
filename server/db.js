@@ -79,7 +79,8 @@ var exp = {
         } else {
             throw new Error('Cannot sync() when NODE_ENV is set to \'production\'.');
         }
-    }
+    },
+    sequelize: sequelize
 };
 for (let type of TYPES) {
     exp[type] = Sequelize[type];

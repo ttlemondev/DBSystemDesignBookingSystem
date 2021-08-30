@@ -24,6 +24,7 @@ var CR_AddFilm = async(ctx, next) => {
     console.log(typeof(requestBody))
     console.log(name)
 
+
     var newFilm = await Filmlist.create({
         name: name,
         director: director,

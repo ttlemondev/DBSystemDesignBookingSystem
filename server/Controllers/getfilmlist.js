@@ -14,6 +14,7 @@ var CR_GetFilmList = async(ctx, next) => {
     }
     let filmid = requestBody.filmid || '-1';
     var filmlist;
+
     if(filmid != '-1') {
         filmlist = await Filmlist.findAll({
             where: {
