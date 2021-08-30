@@ -22,7 +22,11 @@ var CR_GetOrderList = async(ctx, next) => {
     });
     let userid = userinfo[0].id;
     var filmlist = await Filmlist.findAll();
-    let orderlist = await Order.findAll();
+    let orderlist = await Order.findAll({
+        where: {
+            userid: userid
+        }
+    });
     var result = [];
     for(let i in orderlist) {
         let filmid = orderlist[i].filmid;
