@@ -17,9 +17,9 @@ export default function Username(props) {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
             </Head>
             <Navbar page="booking" username={props.username}></Navbar>
-            <div className="m-5 space-y-4">
+            <div className="my-5 sm:m-5 space-y-4">
                 {(props.username == 'admin') ? (
-                    <div className="flex flex-row">
+                    <div className="mx-5 sm:mx-0 flex flex-row">
                         <Link href='/editfilm/-1'>
                             <a className="text-white bg-indigo-500 hover:bg-indigo-700 hover:text-white px-3 py-2 rounded-md text-lg font-medium">创建电影</a>
                         </Link>
